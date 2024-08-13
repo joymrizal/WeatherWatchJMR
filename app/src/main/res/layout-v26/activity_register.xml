@@ -46,6 +46,7 @@
             android:textColor="@color/white2"
             android:textSize="12sp"
             android:textStyle="bold"
+            android:padding="8dp"
             tools:ignore="VisualLintLongText,TextSizeCheck" />
 
         <androidx.cardview.widget.CardView

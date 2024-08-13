@@ -51,9 +51,8 @@ class WeatherWatchActivity : AppCompatActivity() {
         }
 
         viewModel.temperature.observe(this) { data ->
-            val temperatureString = data.toString()
-            tvTemperature.text = "Suhu: $temperatureString"
-            // Display advice based on temperature
+            val temperatureString = data.replace("°C", "").trim()
+            tvTemperature.text = "Suhu: $data"
             val temperature = temperatureString.toIntOrNull() ?: 0
             val tempAdvice = when {
                 temperature < 15 -> "Cuaca dingin, Disarankan untuk memakai pakaian hangat."
@@ -64,9 +63,8 @@ class WeatherWatchActivity : AppCompatActivity() {
         }
 
         viewModel.humidity.observe(this) { data ->
-            val humidityString = data.toString()
-            tvHumidity.text = "Kelembapan Udara: $humidityString"
-            // Display advice based on humidity
+            val humidityString = data.replace("%", "").trim()
+            tvHumidity.text = "Kelembapan Udara: $data"
             val humidity = humidityString.toIntOrNull() ?: 0
             val humidityAdvice = when {
                 humidity < 30 -> "Kelembapan rendah, Pastikan untuk tetap terhidrasi dan gunakan pelembap udara."
@@ -77,9 +75,8 @@ class WeatherWatchActivity : AppCompatActivity() {
         }
 
         viewModel.windSpeed.observe(this) { data ->
-            val windSpeedString = data.toString()
-            tvWindSpeed.text = "Kecepatan Angin: $windSpeedString"
-            // Display advice based on wind speed
+            val windSpeedString = data.replace(" km/jam", "").trim()
+            tvWindSpeed.text = "Kecepatan Angin: $data"
             val windSpeed = windSpeedString.toIntOrNull() ?: 0
             val windSpeedAdvice = when {
                 windSpeed < 15 -> "Angin ringan, Tidak perlu khawatir tentang angin."
@@ -92,7 +89,6 @@ class WeatherWatchActivity : AppCompatActivity() {
         viewModel.windDirection.observe(this) { data ->
             val windDirectionString = data.toString()
             tvWindDirection.text = "Arah Angin: $windDirectionString"
-            // Display advice based on wind direction (if applicable)
             val windDirectionAdvice = when {
                 "utara" in windDirectionString.lowercase() -> "Angin dari utara, Tidak ada saran khusus."
                 "selatan" in windDirectionString.lowercase() -> "Angin dari selatan, Sesuaikan pakaian jika perlu."
