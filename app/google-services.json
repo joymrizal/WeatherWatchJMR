@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "1021046277618",
+    "project_id": "weather-watch-90b34",
+    "storage_bucket": "weather-watch-90b34.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1021046277618:android:53f856855367747374176b",
+        "android_client_info": {
+          "package_name": "com.joymr.firebaseloginuser"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBY4BxV0BveGNRLSIZ5qOM35o3PO3CpUTk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1021046277618:android:805b393b82058f3774176b",
+        "android_client_info": {
+          "package_name": "com.joymr.weatherwatch"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBY4BxV0BveGNRLSIZ5qOM35o3PO3CpUTk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1021046277618:android:9f8365a29a6d771174176b",
+        "android_client_info": {
+          "package_name": "com.joymr.weatherwatchjmr"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBY4BxV0BveGNRLSIZ5qOM35o3PO3CpUTk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

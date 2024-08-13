@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Weather Watch JMR</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="already_have_an_account_login_here">Already have an account? Login here</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_register_here">Don\'t have an account? Register here</string>
+    <string name="weather_watch_jmr">Weather Watch JMR</string>
+    <string name="back">Back</string>
+    <string name="logout">Logout</string>
+    <string name="welcome">Welcome!</string>
+    <string name="loading">Loading ...</string>
+    <string name="description">Aplikasi ini dikembangkan untuk mengambil dan menampilkan informasi data cuaca secara khusus di Kota Bandung, Jawa Barat, Indonesia.</string>
+</resources>
